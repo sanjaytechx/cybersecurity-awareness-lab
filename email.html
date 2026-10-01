@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing Email | Cybersecurity Awareness Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scenarios.css">
+
+</head>
+
+<body>
+
+<header class="lab-header">
+
+    <div class="brand">
+        <span class="shield">🛡️</span>
+        Cybersecurity Awareness Lab
+    </div>
+
+    <a href="index.html" class="back-btn">
+        ← Back to Lab
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>Phishing Email</h1>
+
+        <p>
+            Examine this simulated email and identify the
+            warning signs before interacting with it.
+        </p>
+
+    </section>
+
+
+    <section class="email-demo">
+
+        <div class="email-window">
+
+
+            <div class="email-header">
+
+                <div class="email-logo">
+                    Mail
+                </div>
+
+                <div class="email-search">
+                    Search mail
+                </div>
+
+            </div>
+
+
+            <div class="email-toolbar">
+
+                <span>←</span>
+                <span>🗑</span>
+                <span>⚠</span>
+                <span>⋮</span>
+
+            </div>
+
+
+            <article class="email-message">
+
+                <h2>
+                    ⚠️ Immediate Account Verification Required
+                </h2>
+
+
+                <div class="sender">
+
+                    <div class="sender-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Security Team
+                        </strong>
+
+                        <span>
+                            security-team@secure-alerts.example
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="email-body">
+
+                    <p>
+                        Dear Customer,
+                    </p>
+
+                    <p>
+                        We detected unusual activity on your
+                        account.
+                    </p>
+
+                    <p>
+                        Your account may be temporarily restricted
+                        unless you complete verification immediately.
+                    </p>
+
+
+                    <div class="email-warning">
+                        ⚠ Your verification must be completed today.
+                    </div>
+
+
+                    <button
+                        onclick="showAwareness('email')">
+
+                        Verify Account
+
+                    </button>
+
+
+                    <p class="email-footer">
+                        This message is part of a cybersecurity
+                        awareness simulation.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>🔎 What Looks Suspicious?</h2>
+
+        <p>
+            Check the sender address, urgency, language,
+            request and destination before interacting.
+        </p>
+
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('email')">
+
+            Reveal Red Flags
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h2>Normal Email vs Phishing Pattern</h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>✓ Safer Approach</h3>
+
+                <ul>
+                    <li>Check the complete sender address</li>
+                    <li>Verify unexpected requests independently</li>
+                    <li>Open official websites manually</li>
+                    <li>Inspect links before clicking</li>
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>⚠️ Warning Signs</h3>
+
+                <ul>
+                    <li>Urgent account warning</li>
+                    <li>Unknown sender domain</li>
+                    <li>Pressure to act immediately</li>
+                    <li>Unexpected verification request</li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

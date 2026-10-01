@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WhatsApp OTP Scam | Awareness Lab</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/scenarios.css">
+
+</head>
+
+
+<body>
+
+
+<header class="lab-header">
+
+    <div class="brand">
+
+        <span class="shield">
+            🛡️
+        </span>
+
+        Cybersecurity Awareness Lab
+
+    </div>
+
+
+    <a href="index.html"
+       class="back-btn">
+
+        ← Back to Lab
+
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>
+            WhatsApp OTP Scam
+        </h1>
+
+        <p>
+            A scammer pretends to be someone you know
+            and asks for a verification code sent to your phone.
+        </p>
+
+    </section>
+
+
+    <section class="phone-demo">
+
+
+        <div class="phone">
+
+
+            <div class="phone-top">
+
+                <span>
+                    9:41
+                </span>
+
+                <span>
+                    ● ● ● 🔋
+                </span>
+
+            </div>
+
+
+            <div class="wa-header">
+
+                <div class="avatar">
+                    R
+                </div>
+
+                <div>
+
+                    <strong>
+                        Rahul
+                    </strong>
+
+                    <small>
+                        online
+                    </small>
+
+                </div>
+
+                <div class="wa-icons">
+                    📹 ☎️ ⋮
+                </div>
+
+            </div>
+
+
+            <div class="chat-area">
+
+
+                <div class="message received">
+
+                    Bro urgent help 😭
+
+                    <span>
+                        10:31 AM
+                    </span>
+
+                </div>
+
+
+                <div class="message received">
+
+                    I accidentally entered your
+                    number while verifying my WhatsApp.
+
+                    <span>
+                        10:31 AM
+                    </span>
+
+                </div>
+
+
+                <div class="message received">
+
+                    You will get a 6 digit code now.
+                    Please send it to me quickly.
+
+                    <span>
+                        10:32 AM
+                    </span>
+
+                </div>
+
+
+                <div class="message received suspicious">
+
+                    It's urgent bro.
+                    Otherwise my account will get blocked.
+
+                    <span>
+                        10:32 AM
+                    </span>
+
+                </div>
+
+
+                <div class="fake-otp">
+
+                    <div class="otp-icon">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Verification Code
+                        </strong>
+
+                        <p>
+                            Demo Code: <b>482 731</b>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="message sent">
+
+                    Is this the code you need?
+
+                    <span>
+                        10:33 AM ✓✓
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="chat-input">
+
+                <span>
+                    ＋
+                </span>
+
+                <div>
+                    Message
+                </div>
+
+                <span>
+                    🎤
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>
+            ⚠️ What Would You Do?
+        </h2>
+
+
+        <div class="choice-grid">
+
+            <button
+                onclick="showAwareness('otp-safe')">
+
+                🔍 Verify With The Person First
+
+            </button>
+
+
+            <button
+                onclick="showAwareness('otp-danger')">
+
+                📩 Send The OTP
+
+            </button>
+
+        </div>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h2>
+            Normal Situation vs Scam Pattern
+        </h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>
+                    ✓ Safer Behaviour
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Never share OTPs
+                    </li>
+
+                    <li>
+                        Contact the person separately
+                    </li>
+
+                    <li>
+                        Check your own account activity
+                    </li>
+
+                    <li>
+                        Treat unexpected codes as suspicious
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>
+                    ⚠️ Warning Signs
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Unexpected verification code
+                    </li>
+
+                    <li>
+                        Urgent request
+                    </li>
+
+                    <li>
+                        Pressure to respond quickly
+                    </li>
+
+                    <li>
+                        Someone asking for your OTP
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

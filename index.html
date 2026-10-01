@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cybersecurity Awareness Lab</title>
+
+    <meta name="description"
+        content="Interactive Cybersecurity Awareness Lab covering phishing, smishing, OTP scams, QR scams, APK scams, social media impersonation and online fraud awareness.">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scenario CSS -->
+    <link rel="stylesheet" href="css/scenarios.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="lab-header">
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    🛡️
+                </div>
+
+                <div>
+                    <h1>Cybersecurity Awareness Lab</h1>
+
+                    <p>
+                        Learn. Identify. Stay Safe.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <nav class="main-nav">
+
+                <a href="index.html" class="active">
+                    Home
+                </a>
+
+                <a href="quiz.html">
+                    Awareness Quiz
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+        <section class="scenario-page">
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <div class="scenario-intro">
+
+                <span class="scenario-tag">
+                    CYBERSECURITY EDUCATION
+                </span>
+
+                <h2>
+                    Cybersecurity Awareness Lab
+                </h2>
+
+                <p>
+                    Explore realistic cybersecurity scam simulations
+                    and learn how to identify common warning signs
+                    before becoming a victim.
+                </p>
+
+
+                <div class="action-box">
+
+                    <strong>
+                        ⚠️ Educational Simulation
+                    </strong>
+
+                    <p>
+                        These scenarios are created for cybersecurity
+                        awareness and training purposes. No real
+                        credentials, OTPs, payment information or
+                        personal data are collected.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SCENARIO SECTION
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        INTERACTIVE SCENARIOS
+                    </span>
+
+                    <h2>
+                        Explore Common Online Scams
+                    </h2>
+
+                    <p>
+                        Select a scenario to understand how the attack
+                        may appear and what warning signs you should look for.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BANK PHISHING
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        🏦
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            PHISHING
+                        </span>
+
+                        <h3>
+                            Fake Bank Website
+                        </h3>
+
+                        <p>
+                            Learn how fake banking websites can imitate
+                            legitimate services and create a false sense
+                            of urgency.
+                        </p>
+
+                        <button onclick="openDemoPage('bank.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     EMAIL PHISHING
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        📧
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            PHISHING
+                        </span>
+
+                        <h3>
+                            Fake Email Phishing
+                        </h3>
+
+                        <p>
+                            Identify suspicious sender addresses, links,
+                            urgency and other common email phishing indicators.
+                        </p>
+
+                        <button onclick="openDemoPage('email.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     SMS / SMISHING
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        📱
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            SMISHING
+                        </span>
+
+                        <h3>
+                            Fake SMS Phishing
+                        </h3>
+
+                        <p>
+                            Learn how suspicious text messages use urgency,
+                            fake links and unexpected alerts to trick users.
+                        </p>
+
+                        <button onclick="openDemoPage('sms.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     WHATSAPP
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        💬
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            SOCIAL ENGINEERING
+                        </span>
+
+                        <h3>
+                            WhatsApp Reward Scam
+                        </h3>
+
+                        <p>
+                            Understand how fake rewards and promotional
+                            messages can be used as social engineering bait.
+                        </p>
+
+                        <button onclick="openDemoPage('whatsapp.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     OTP
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        🔐
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            SOCIAL ENGINEERING
+                        </span>
+
+                        <h3>
+                            WhatsApp OTP Scam
+                        </h3>
+
+                        <p>
+                            Learn why verification codes should remain
+                            private and how unexpected OTP requests
+                            can be a warning sign.
+                        </p>
+
+                        <button onclick="openDemoPage('otp.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     QR
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        🔳
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            QR SCAM
+                        </span>
+
+                        <h3>
+                            WhatsApp QR Scam
+                        </h3>
+
+                        <p>
+                            Understand why scanning an unexpected QR code
+                            can expose you to suspicious websites or
+                            unwanted actions.
+                        </p>
+
+                        <button onclick="openDemoPage('qr.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     APK
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        📦
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            APP SECURITY
+                        </span>
+
+                        <h3>
+                            Fake WhatsApp APK Scam
+                        </h3>
+
+                        <p>
+                            Learn how attackers may use fake updates and
+                            unofficial application files as social engineering bait.
+                        </p>
+
+                        <button onclick="openDemoPage('apk.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     INSTAGRAM
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        📸
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            IMPERSONATION
+                        </span>
+
+                        <h3>
+                            Instagram Impersonation
+                        </h3>
+
+                        <p>
+                            Learn how fake accounts copy usernames,
+                            profile images and branding to appear legitimate.
+                        </p>
+
+                        <button onclick="openDemoPage('instagram.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     TELEGRAM
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        📈
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            INVESTMENT SCAM
+                        </span>
+
+                        <h3>
+                            Telegram Investment Scam
+                        </h3>
+
+                        <p>
+                            Identify common warning signs such as guaranteed
+                            returns, high-profit claims and pressure to act quickly.
+                        </p>
+
+                        <button onclick="openDemoPage('telegram.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     GIVEAWAY
+                ================================================== -->
+
+                <article class="scenario-card">
+
+                    <div class="scenario-card-icon">
+                        🎁
+                    </div>
+
+                    <div class="scenario-card-content">
+
+                        <span class="scenario-label">
+                            ONLINE SCAM
+                        </span>
+
+                        <h3>
+                            Fake Giveaway Scam
+                        </h3>
+
+                        <p>
+                            Learn how fake giveaways can use prizes,
+                            urgency and unexpected messages to attract victims.
+                        </p>
+
+                        <button onclick="openDemoPage('giveaway.html')">
+                            Explore Scenario →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 HOW SCAMS WORK
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        UNDERSTAND THE ATTACK
+                    </span>
+
+                    <h2>
+                        How Online Scams Usually Work
+                    </h2>
+
+                    <p>
+                        Many online scams follow a similar social engineering
+                        pattern designed to influence the victim's decision.
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Create Trust
+                        </h3>
+
+                        <p>
+                            The attacker may imitate a bank, company,
+                            friend, delivery service or popular platform.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Create Urgency
+                        </h3>
+
+                        <p>
+                            The message may claim that an account,
+                            reward or opportunity requires immediate action.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Trigger an Action
+                        </h3>
+
+                        <p>
+                            The victim may be encouraged to click a link,
+                            scan a QR code, install an application or share information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Exploit the Response
+                        </h3>
+
+                        <p>
+                            The attacker attempts to take advantage of the
+                            victim's action or information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RED FLAGS
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        QUICK CHECK
+                    </span>
+
+                    <h2>
+                        Common Red Flags
+                    </h2>
+
+                    <p>
+                        Before clicking, scanning, installing or responding,
+                        look for these warning signs.
+                    </p>
+
+                </div>
+
+
+                <div class="action-box">
+
+                    <button onclick="toggleFlags()">
+                        🔍 Show Red Flags
+                    </button>
+
+                    <button onclick="resetFlags()">
+                        Reset
+                    </button>
+
+                </div>
+
+
+                <div id="redFlags" class="red-flags">
+
+                    <div class="flag-item">
+                        ⚠️ Unexpected message or request
+                    </div>
+
+                    <div class="flag-item">
+                        🔗 Suspicious or unfamiliar domain
+                    </div>
+
+                    <div class="flag-item">
+                        ⏱️ Strong urgency or pressure
+                    </div>
+
+                    <div class="flag-item">
+                        🔐 Request for sensitive information
+                    </div>
+
+                    <div class="flag-item">
+                        📱 Unknown application or APK
+                    </div>
+
+                    <div class="flag-item">
+                        🎁 Unexpected prize or reward
+                    </div>
+
+                    <div class="flag-item">
+                        💰 Guaranteed or unrealistic financial claims
+                    </div>
+
+                    <div class="flag-item">
+                        👤 Suspicious or impersonated account
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STAY SAFE
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        STAY PROTECTED
+                    </span>
+
+                    <h2>
+                        How to Stay Safe
+                    </h2>
+
+                    <p>
+                        Simple habits can help you recognize suspicious
+                        requests before taking action.
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🔎 Verify
+                        </h3>
+
+                        <p>
+                            Verify unexpected requests through an independent
+                            and trusted source.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🔗 Check Links
+                        </h3>
+
+                        <p>
+                            Inspect the domain carefully before opening
+                            unexpected links.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🔐 Protect Codes
+                        </h3>
+
+                        <p>
+                            Never share OTPs, verification codes or
+                            authentication information with another person.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            📱 Use Trusted Apps
+                        </h3>
+
+                        <p>
+                            Install applications and updates through
+                            trusted official sources.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            ⏸️ Slow Down
+                        </h3>
+
+                        <p>
+                            Urgency is often used to make people act
+                            before they have time to verify.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🚨 Report
+                        </h3>
+
+                        <p>
+                            Report suspicious messages, accounts and
+                            websites through the appropriate platform or authority.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 QUIZ CTA
+            ================================================== -->
+
+            <section class="scenario-intro">
+
+                <span class="scenario-tag">
+                    TEST YOUR KNOWLEDGE
+                </span>
+
+                <h2>
+                    Ready to Test Your Awareness?
+                </h2>
+
+                <p>
+                    Take the Cybersecurity Awareness Quiz and
+                    see how well you can identify common online scam indicators.
+                </p>
+
+
+                <div class="action-box">
+
+                    <button onclick="openDemoPage('quiz.html')">
+                        🧠 Start Awareness Quiz →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                © 2026 Cybersecurity Awareness Lab
+            </p>
+
+            <p>
+                Educational cybersecurity simulation for awareness and training.
+            </p>
+
+        </div>
+
+    </footer>   
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
+    <script src="js/scenarios.js"></script>
+
+</body>
+
+</html>

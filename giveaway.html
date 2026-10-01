@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fake Giveaway | Awareness Lab</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/scenarios.css">
+
+</head>
+
+
+<body>
+
+
+<header class="lab-header">
+
+    <div class="brand">
+
+        <span class="shield">
+            🛡️
+        </span>
+
+        Cybersecurity Awareness Lab
+
+    </div>
+
+
+    <a href="index.html"
+       class="back-btn">
+
+        ← Back to Lab
+
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>
+            Fake Giveaway Scam
+        </h1>
+
+        <p>
+            Fake giveaways often use attractive prizes to
+            encourage people to click links or provide information.
+        </p>
+
+    </section>
+
+
+    <section class="giveaway-demo">
+
+
+        <div class="giveaway-card">
+
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+
+            <span class="winner-label">
+                YOU'VE BEEN SELECTED
+            </span>
+
+
+            <h2>
+                Congratulations!
+            </h2>
+
+
+            <p>
+                You have won a
+                <strong>
+                    Premium Smartphone
+                </strong>.
+            </p>
+
+
+            <div class="prize">
+                📱
+            </div>
+
+
+            <p class="claim-text">
+
+                Claim your prize within
+                <strong>
+                    10 minutes
+                </strong>.
+
+            </p>
+
+
+            <button
+                onclick="showAwareness('giveaway')">
+
+                Claim Prize
+
+            </button>
+
+
+            <small>
+                Awareness simulation.
+                No real prize exists.
+            </small>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="action-box">
+
+
+        <h2>
+            🔎 Would You Trust This Message?
+        </h2>
+
+
+        <p>
+            Ask yourself whether you actually entered the
+            giveaway and whether the promotion can be verified.
+        </p>
+
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('giveaway')">
+
+            Reveal Warning Signs
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+
+        <h2>
+            Legitimate Giveaway vs Suspicious Giveaway
+        </h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>
+                    ✓ Verify First
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Check the organizer
+                    </li>
+
+                    <li>
+                        Find official giveaway rules
+                    </li>
+
+                    <li>
+                        Verify through official channels
+                    </li>
+
+                    <li>
+                        Never pay unexpected fees
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>
+                    ⚠️ Warning Signs
+                </h3>
+
+                <ul>
+
+                    <li>
+                        You never entered the giveaway
+                    </li>
+
+                    <li>
+                        Very short claim deadline
+                    </li>
+
+                    <li>
+                        Requests for personal information
+                    </li>
+
+                    <li>
+                        Unexpected payment or delivery fees
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

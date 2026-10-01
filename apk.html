@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fake APK Scam | Awareness Lab</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/scenarios.css">
+
+</head>
+
+
+<body>
+
+
+<header class="lab-header">
+
+    <div class="brand">
+
+        <span class="shield">
+            🛡️
+        </span>
+
+        Cybersecurity Awareness Lab
+
+    </div>
+
+
+    <a href="index.html"
+       class="back-btn">
+
+        ← Back to Lab
+
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>
+            Fake APK Update Scam
+        </h1>
+
+        <p>
+            Attackers may impersonate popular services and
+            persuade users to install applications from
+            untrusted sources.
+        </p>
+
+    </section>
+
+
+    <section class="apk-demo">
+
+
+        <div class="browser-window">
+
+
+            <div class="browser-bar">
+
+                <div class="browser-buttons">
+                    ● ● ●
+                </div>
+
+
+                <div class="address-bar">
+                    update-service.example/app
+                </div>
+
+            </div>
+
+
+            <div class="fake-site">
+
+
+                <div class="fake-logo">
+                    SERVICE
+                </div>
+
+
+                <div class="update-icon">
+                    ⚠️
+                </div>
+
+
+                <h2>
+                    Critical Update Required
+                </h2>
+
+
+                <p>
+                    Your application version is outdated.
+                    Install the latest security update to
+                    continue using the service.
+                </p>
+
+
+                <div class="fake-file">
+
+                    <span>
+                        📦
+                    </span>
+
+                    Service_Update.apk
+
+                    <small>
+                        Demo file • 18.4 MB
+                    </small>
+
+                </div>
+
+
+                <button
+                    onclick="showAwareness('apk')">
+
+                    Install Update
+
+                </button>
+
+
+                <div class="demo-notice">
+                    No real APK is downloaded.
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>
+            🔎 Inspect Before Installing
+        </h2>
+
+
+        <p>
+            Examine the website, file type, source and
+            installation request.
+        </p>
+
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('apk')">
+
+            Reveal Warning Signs
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h2>
+            Official Update vs Suspicious APK
+        </h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>
+                    ✓ Safer Approach
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Use the official app store
+                    </li>
+
+                    <li>
+                        Check the publisher
+                    </li>
+
+                    <li>
+                        Keep automatic updates enabled
+                    </li>
+
+                    <li>
+                        Verify unexpected update messages
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>
+                    ⚠️ Warning Signs
+                </h3>
+
+                <ul>
+
+                    <li>
+                        APK sent through chat or SMS
+                    </li>
+
+                    <li>
+                        Unknown download website
+                    </li>
+
+                    <li>
+                        Urgent installation request
+                    </li>
+
+                    <li>
+                        Unusual application permissions
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

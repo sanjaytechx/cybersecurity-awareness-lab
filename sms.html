@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMS Phishing / Smishing | Cybersecurity Awareness Lab</title>
+
+    <meta name="description"
+        content="Interactive SMS phishing awareness simulation explaining common smishing warning signs.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scenarios.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="lab-header">
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    🛡️
+                </div>
+
+                <div>
+                    <h1>Cybersecurity Awareness Lab</h1>
+                    <p>Learn. Identify. Stay Safe.</p>
+                </div>
+
+            </div>
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="quiz.html">
+                    Awareness Quiz
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+        <section class="scenario-page">
+
+            <!-- =================================================
+                 INTRO
+            ================================================== -->
+
+            <div class="scenario-intro">
+
+                <span class="scenario-tag">
+                    SMS PHISHING / SMISHING
+                </span>
+
+                <h2>
+                    Fake SMS Phishing
+                </h2>
+
+                <p>
+                    Learn how attackers use text messages, urgency,
+                    fake links and unexpected alerts to trick people
+                    into taking unsafe actions.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 SIMULATED SMS
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        SIMULATION
+                    </span>
+
+                    <h2>
+                        Example of a Suspicious SMS
+                    </h2>
+
+                    <p>
+                        This is a fictional cybersecurity awareness
+                        simulation. The domain shown below is not a
+                        real service.
+                    </p>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="phone">
+
+                    <div class="phone-header">
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span>
+                            10:42 AM
+                        </span>
+
+                    </div>
+
+
+                    <div class="phone-content">
+
+                        <!-- CONTACT -->
+
+                        <div class="sms-contact">
+
+                            <div class="contact-avatar">
+                                ⚠️
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Service Alert
+                                </strong>
+
+                                <small>
+                                    Unknown Sender
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="sms-message">
+
+                            <p>
+                                Your account requires immediate verification.
+                            </p>
+
+                            <p>
+                                Failure to verify may result in temporary
+                                account restriction.
+                            </p>
+
+                            <p>
+                                Verify now:
+                            </p>
+
+                            <strong class="suspicious-link">
+                                verify-account.example
+                            </strong>
+
+                            <p class="sms-warning">
+                                ⚠️ Simulated suspicious link
+                            </p>
+
+                        </div>
+
+
+                        <!-- ANALYZE BUTTON -->
+
+                        <div class="action-box">
+
+                            <button onclick="showAwareness('sms')">
+                                🔍 Analyze This SMS
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 WARNING SIGNS
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        IDENTIFY THE WARNING SIGNS
+                    </span>
+
+                    <h2>
+                        What Makes This SMS Suspicious?
+                    </h2>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            01
+                        </div>
+
+                        <h3>
+                            ⏱️ Urgency
+                        </h3>
+
+                        <p>
+                            The message tries to make the recipient
+                            act immediately instead of taking time
+                            to verify the request.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            02
+                        </div>
+
+                        <h3>
+                            🔗 Suspicious Link
+                        </h3>
+
+                        <p>
+                            The message directs the recipient to an
+                            unfamiliar domain rather than a verified
+                            official website.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            03
+                        </div>
+
+                        <h3>
+                            ⚠️ Unexpected Alert
+                        </h3>
+
+                        <p>
+                            If you were not expecting the notification,
+                            verify it independently before taking action.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-number">
+                            04
+                        </div>
+
+                        <h3>
+                            🎯 Action Request
+                        </h3>
+
+                        <p>
+                            The message attempts to push the recipient
+                            toward clicking a link before verifying the request.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DECISION SIMULATION
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        MAKE A DECISION
+                    </span>
+
+                    <h2>
+                        What Would You Do?
+                    </h2>
+
+                    <p>
+                        Choose an action to see the cybersecurity
+                        awareness explanation.
+                    </p>
+
+                </div>
+
+
+                <div class="action-box">
+
+                    <button onclick="showAwareness('sms-safe')">
+                        ✓ Verify Through Official Source
+                    </button>
+
+                    <button onclick="showAwareness('sms-danger')">
+                        🔗 Click the SMS Link
+                    </button>
+
+                </div>
+
+
+                <div id="awarenessResult"></div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SAFE VERIFICATION
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        SAFE VERIFICATION
+                    </span>
+
+                    <h2>
+                        How Should You Verify the Message?
+                    </h2>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            📱 Use the Official App
+                        </h3>
+
+                        <p>
+                            Open the organization's official application
+                            directly and check whether the notification
+                            actually exists.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🌐 Enter the Website Manually
+                        </h3>
+
+                        <p>
+                            Instead of using the SMS link, manually enter
+                            the known official website address.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            ☎️ Contact the Organization
+                        </h3>
+
+                        <p>
+                            Use a trusted phone number or contact method
+                            obtained independently from the suspicious message.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            🗑️ Don't Engage
+                        </h3>
+
+                        <p>
+                            If the message appears suspicious, avoid clicking
+                            links or replying until it has been verified.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 REAL VS SUSPICIOUS
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        QUICK COMPARISON
+                    </span>
+
+                    <h2>
+                        Safer Response vs. Risky Response
+                    </h2>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            ✓ Safer Response
+                        </h3>
+
+                        <p>
+                            Ignore the link and independently verify the
+                            notification through the organization's official
+                            app, website or trusted contact method.
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            ⚠️ Risky Response
+                        </h3>
+
+                        <p>
+                            Immediately clicking the link because the message
+                            claims that an account will be restricted.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 COMMON SMISHING RED FLAGS
+            ================================================== -->
+
+            <section class="comparison">
+
+                <div class="section-heading">
+
+                    <span class="scenario-tag">
+                        QUICK CHECK
+                    </span>
+
+                    <h2>
+                        Common Smishing Red Flags
+                    </h2>
+
+                </div>
+
+
+                <div class="action-box">
+
+                    <button onclick="toggleFlags()">
+                        🔍 Show Red Flags
+                    </button>
+
+                    <button onclick="resetFlags()">
+                        Reset
+                    </button>
+
+                </div>
+
+
+                <div id="redFlags" class="red-flags">
+
+                    <div class="flag-item">
+                        ⚠️ Unexpected SMS
+                    </div>
+
+                    <div class="flag-item">
+                        ⏱️ Urgent deadline
+                    </div>
+
+                    <div class="flag-item">
+                        🔗 Unknown or suspicious domain
+                    </div>
+
+                    <div class="flag-item">
+                        🔐 Request for sensitive information
+                    </div>
+
+                    <div class="flag-item">
+                        💳 Unexpected payment request
+                    </div>
+
+                    <div class="flag-item">
+                        🎁 Unexpected reward or prize
+                    </div>
+
+                    <div class="flag-item">
+                        👤 Unknown sender
+                    </div>
+
+                    <div class="flag-item">
+                        ❗ Threat of account suspension
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KEY TAKEAWAY
+            ================================================== -->
+
+            <section class="scenario-intro">
+
+                <span class="scenario-tag">
+                    KEY TAKEAWAY
+                </span>
+
+                <h2>
+                    Stop. Verify. Then Act.
+                </h2>
+
+                <p>
+                    A text message can look convincing without being
+                    legitimate. Check the sender, inspect the destination
+                    and independently verify unexpected requests.
+                </p>
+
+                <div class="action-box">
+
+                    <button onclick="openDemoPage('index.html')">
+                        ← Back to Awareness Lab
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                © 2026 Cybersecurity Awareness Lab
+            </p>
+
+            <p>
+                Educational cybersecurity simulation for awareness and training.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
+    <script src="js/scenarios.js"></script>
+
+</body>
+
+</html>

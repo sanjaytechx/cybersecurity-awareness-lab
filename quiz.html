@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Spot the Scam | Cybersecurity Awareness Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scenarios.css">
+
+</head>
+
+<body>
+
+<header class="lab-header">
+
+    <div class="brand">
+        <span class="shield">🛡️</span>
+        Cybersecurity Awareness Lab
+    </div>
+
+    <a href="index.html" class="back-btn">
+        ← Back to Lab
+    </a>
+
+</header>
+
+
+<main class="quiz-page">
+
+    <!-- INTRO -->
+
+    <section class="quiz-intro">
+
+        <span class="quiz-label">
+            INTERACTIVE AWARENESS TEST
+        </span>
+
+        <h1>
+            Can You Spot the Scam?
+        </h1>
+
+        <p>
+            Examine each scenario carefully.
+            Look for suspicious links, urgency, unusual requests,
+            impersonation and other warning signs.
+        </p>
+
+        <div class="quiz-stats">
+
+            <div>
+                <strong id="questionNumber">1</strong>
+                <span>Question</span>
+            </div>
+
+            <div>
+                <strong id="score">0</strong>
+                <span>Score</span>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <span>Total</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION -->
+
+    <section class="quiz-card" id="quizCard">
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question-type">
+            SCENARIO 01
+        </div>
+
+
+        <h2 id="question">
+            Loading scenario...
+        </h2>
+
+
+        <div id="scenarioContent"
+             class="scenario-content">
+        </div>
+
+
+        <div id="answers"
+             class="answers">
+        </div>
+
+
+        <div id="feedback"
+             class="feedback hidden">
+        </div>
+
+
+        <button id="nextButton"
+                class="next-button hidden"
+                onclick="nextQuestion()">
+
+            Next Scenario →
+
+        </button>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section id="resultCard"
+             class="result-card hidden">
+
+        <div class="result-icon">
+            🛡️
+        </div>
+
+        <span class="quiz-label">
+            AWARENESS TEST COMPLETE
+        </span>
+
+        <h2>
+            Your Result
+        </h2>
+
+        <div class="final-score">
+
+            <strong id="finalScore">
+                0
+            </strong>
+
+            <span>
+                / 5
+            </span>
+
+        </div>
+
+        <p id="resultMessage"></p>
+
+
+        <div class="result-actions">
+
+            <button onclick="restartQuiz()">
+                Try Again
+            </button>
+
+            <a href="index.html">
+                Back to Lab
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

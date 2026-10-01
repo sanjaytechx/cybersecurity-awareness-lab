@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Impersonation | Awareness Lab</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/scenarios.css">
+
+</head>
+
+
+<body>
+
+
+<header class="lab-header">
+
+    <div class="brand">
+
+        <span class="shield">
+            🛡️
+        </span>
+
+        Cybersecurity Awareness Lab
+
+    </div>
+
+
+    <a href="index.html"
+       class="back-btn">
+
+        ← Back to Lab
+
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>
+            Social Media Impersonation
+        </h1>
+
+        <p>
+            An attacker may create a profile that looks similar
+            to a real creator, company or public account.
+        </p>
+
+    </section>
+
+
+    <section class="social-demo">
+
+
+        <div class="social-card">
+
+
+            <div class="profile-header">
+
+
+                <div class="profile-photo">
+                    S
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong>
+                        Official_Service
+                    </strong>
+
+                    <span>
+                        Followed by 18 people you follow
+                    </span>
+
+                </div>
+
+
+                <button>
+                    Follow
+                </button>
+
+
+            </div>
+
+
+            <div class="verification-warning">
+
+                ⚠️ Verification status cannot be confirmed
+
+            </div>
+
+
+            <div class="profile-content">
+
+                <h2>
+                    Congratulations 🎉
+                </h2>
+
+
+                <p>
+                    You have been selected for our
+                    exclusive creator reward program.
+                </p>
+
+
+                <p>
+                    Contact our support team through
+                    the link below to claim your reward.
+                </p>
+
+
+                <button
+                    onclick="showAwareness('social')">
+
+                    Contact Support
+
+                </button>
+
+
+                <div class="demo-notice">
+                    Social media impersonation simulation.
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>
+            🔎 Verify the Account
+        </h2>
+
+
+        <p>
+            Don't rely only on profile pictures,
+            followers or familiar branding.
+        </p>
+
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('social')">
+
+            Reveal Warning Signs
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+
+        <h2>
+            Real Account vs Impersonation Pattern
+        </h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>
+                    ✓ Verify the Account
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Check the exact username
+                    </li>
+
+                    <li>
+                        Review account history
+                    </li>
+
+                    <li>
+                        Use official websites for contact
+                    </li>
+
+                    <li>
+                        Verify external links
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>
+                    ⚠️ Suspicious Signals
+                </h3>
+
+                <ul>
+
+                    <li>
+                        New or unusual profile
+                    </li>
+
+                    <li>
+                        Modified username
+                    </li>
+
+                    <li>
+                        Unexpected reward
+                    </li>
+
+                    <li>
+                        Request to move conversation elsewhere
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

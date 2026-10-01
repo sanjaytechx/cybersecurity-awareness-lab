@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>QR Scam | Awareness Lab</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/scenarios.css">
+
+</head>
+
+
+<body>
+
+
+<header class="lab-header">
+
+    <div class="brand">
+
+        <span class="shield">
+            🛡️
+        </span>
+
+        Cybersecurity Awareness Lab
+
+    </div>
+
+
+    <a href="index.html"
+       class="back-btn">
+
+        ← Back to Lab
+
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>
+            QR Code Scam
+        </h1>
+
+        <p>
+            QR codes can open websites or payment applications.
+            The QR code itself does not automatically mean
+            the destination is trustworthy.
+        </p>
+
+    </section>
+
+
+    <section class="qr-demo">
+
+
+        <div class="qr-card">
+
+            <div class="merchant-logo">
+                PAY
+            </div>
+
+
+            <h2>
+                You've Received a Refund
+            </h2>
+
+
+            <p class="refund">
+                ₹2,500 Refund Pending
+            </p>
+
+
+            <div class="qr-placeholder">
+
+                <div class="qr-grid">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <h3>
+                Scan QR to Receive Refund
+            </h3>
+
+
+            <p class="small-text">
+                Demo payment simulation only.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>
+            🔎 Examine Before Scanning
+        </h2>
+
+
+        <p>
+            Ask who sent the QR code, why you received it,
+            and what action it is asking you to take.
+        </p>
+
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('qr')">
+
+            Inspect This QR Scenario
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h2>
+            Normal Payment vs Suspicious QR Request
+        </h2>
+
+
+        <div class="compare-grid">
+
+
+            <div class="compare-card safe">
+
+                <h3>
+                    ✓ Safer Approach
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Confirm who sent the QR code
+                    </li>
+
+                    <li>
+                        Check the destination
+                    </li>
+
+                    <li>
+                        Use trusted payment workflows
+                    </li>
+
+                    <li>
+                        Verify unexpected refunds
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>
+                    ⚠️ Warning Signs
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Unexpected refund
+                    </li>
+
+                    <li>
+                        Unknown QR code
+                    </li>
+
+                    <li>
+                        Pressure to scan immediately
+                    </li>
+
+                    <li>
+                        Request for payment information
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>

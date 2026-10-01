@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banking Phishing | Cybersecurity Awareness Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scenarios.css">
+</head>
+
+<body>
+
+<header class="lab-header">
+
+    <div class="brand">
+        <span class="shield">🛡️</span>
+        Cybersecurity Awareness Lab
+    </div>
+
+    <a href="index.html" class="back-btn">
+        ← Back to Lab
+    </a>
+
+</header>
+
+
+<main class="scenario-page">
+
+    <section class="scenario-intro">
+
+        <span class="scenario-tag danger">
+            SIMULATION
+        </span>
+
+        <h1>Fake Banking Website</h1>
+
+        <p>
+            Phishing websites are designed to look like legitimate
+            banking or financial services and convince users to
+            enter sensitive information.
+        </p>
+
+    </section>
+
+
+    <section class="bank-browser">
+
+        <div class="browser-window">
+
+            <div class="browser-bar">
+
+                <div class="browser-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="address-bar">
+                    🔒 secure-login.verify-user.example
+                </div>
+
+            </div>
+
+
+            <div class="bank-site">
+
+                <div class="bank-logo">
+                    DEMOBANK
+                </div>
+
+                <div class="bank-content">
+
+                    <div class="bank-icon">
+                        🏦
+                    </div>
+
+                    <h2>Secure Internet Banking</h2>
+
+                    <p>
+                        Please verify your account to continue.
+                    </p>
+
+
+                    <form onsubmit="event.preventDefault(); showAwareness('bank');">
+
+                        <label>
+                            Customer ID
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Demo Customer ID"
+                            autocomplete="off"
+                        >
+
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            placeholder="Demo Password"
+                            autocomplete="off"
+                        >
+
+
+                        <button type="submit">
+                            Sign In
+                        </button>
+
+                    </form>
+
+
+                    <div class="demo-notice">
+                        Awareness simulation.
+                        Do not enter real credentials.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="action-box">
+
+        <h2>🔎 Inspect Before You Sign In</h2>
+
+        <p>
+            Look at the domain, message context, security indicators
+            and the reason you were asked to sign in.
+        </p>
+
+        <button
+            class="primary-action"
+            onclick="showAwareness('bank')">
+
+            Reveal Awareness Analysis
+
+        </button>
+
+
+        <div id="awarenessResult"></div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h2>Legitimate Banking vs Phishing</h2>
+
+
+        <div class="compare-grid">
+
+            <div class="compare-card safe">
+
+                <h3>✓ Safer Approach</h3>
+
+                <ul>
+                    <li>Open your banking app directly</li>
+                    <li>Check the exact website domain</li>
+                    <li>Ignore unexpected login links</li>
+                    <li>Contact the bank using official contact details</li>
+                </ul>
+
+            </div>
+
+
+            <div class="compare-card danger-card">
+
+                <h3>⚠️ Warning Signs</h3>
+
+                <ul>
+                    <li>Unknown or unusual domain</li>
+                    <li>Urgent account verification</li>
+                    <li>Unexpected login request</li>
+                    <li>Link received through an untrusted channel</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/scenarios.js"></script>
+
+</body>
+</html>
